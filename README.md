@@ -1,8 +1,10 @@
-# ADD SOME MAGIC TO YOUR WEB PROJECT!
+# Add Some Glitter And Sparks To Your Web Project!
 
 Unleash the power of the GPU! Use fancy-webgl-sparkles.js to spice up your website with this awesome webgl effect.
+![](https://raw.githubusercontent.com/elisamuelps/fancy-webgl-sparkles/master/res/demo.gif)
 
-Please check the demo with the [documentation]() to get started.
+Please check the demo with the [documentation](https://fancy-webgl-sparkles.netlify.com) to get started.
+
 
 ## What is Fancy WebGl Sparkles?
 
@@ -33,7 +35,10 @@ npm i fancy-webgl-sparkles
 ```
 
 ### Web
-Add before the closing body tag
+Download fancy-webgl-sparkles.js from the dist directory and add before the closing body tag
 ``` html
-<script src="../dist/fancy-webgl-sparkles.js"></script>
+<script src="./your-path/fancy-webgl-sparkles.js"></script>
 ```
+
+## Contribute
+If you wish to contribute just send a pull request =) wheter you find a bug or have a feature request feel free to get in touch.
