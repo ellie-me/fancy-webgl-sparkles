@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Fancy WebGL Sparkles</title>
+		<script
+			data-name="BMC-Widget"
+			src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+			data-id="NXhMDeu"
+			data-description="Support me on Buy me a coffee!"
+			data-message="Thank you for visiting. You can now buy me a coffee!"
+			data-color="#FF813F"
+			data-position="right"
+			data-x_margin="18"
+			data-y_margin="18"
+		></script>
+		<link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body class="body">
+		<div id="docs"></div>
+		<script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+		<script src="../dist/fancy-webgl-sparkles.js"></script>
+	</body>
+
+	<script>
+		new Docute({
+			target: "#docs",
+			logo: "<span class='logo'>fancy-webgl-sparkles.js</span>",
+			darkThemeToggler: true,
+			nav: [
+				{
+					title: "Home",
+					link: "/",
+				},
+				{
+					title: "Get Started",
+					link: "/getting-started/introduction",
+				},
+				{
+					title: "Examples",
+					link: "/usage/examples",
+				},
+				{
+					title: "GitHub",
+					link: "https://github.com",
+				},
+				{
+					title: "Buy Me A Coffee",
+					link: "https://www.buymeacoffee.com/NXhMDeu",
+				}
+			],
+			sidebar:
+			[
+				{
+					title: "Getting Started",
+					children:
+					[
+						{
+							title: "Introduction",
+							link: "/getting-started/introduction",
+						},
+						{
+							title: "FAQ",
+							link: "/getting-started/faq",
+						},
+					],
+				},
+				{
+					title: "Usage",
+					children:
+					[
+						{
+							title: "Example Usage",
+							link: "/usage/examples",
+						},
+						{
+							title: "Options",
+							link: "/usage/options",
+						},
+						{
+							title: "Methods",
+							link: "/usage/methods",
+						},
+					],
+				},
+				{
+					title: "Credits",
+					link: "/credits",
+				},
+				{
+					title: "GitHub",
+					link: "https://github.com/egoist/docute",
+				},
+			],
+		});
+
+	FancyWebGLSparkles.init(document.querySelector(".Header"),
+	{
+		persistent: true,
+		renderOutside: false,
+		sparkleScale: 250,
+		renderBokeh: true,
+		bokehSize: 0.4,
+		sparkleColor: "rainbow"
+	});
+	</script>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Raleway:700|Sunshiney&display=swap');
+		.logo
+		{
+			font-family: 'Sunshiney', cursive;
+			font-size: 2rem;
+		}
+	</style>
+</html>
