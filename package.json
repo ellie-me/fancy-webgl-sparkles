@@ -1,6 +1,6 @@
 {
 	"name": "fancy-webgl-sparkles",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "PIXI.js library to add glitter particles with bokeh and special effects to your DOM elements",
 	"main": "index.js",
 	"scripts": {
@@ -9,11 +9,11 @@
 	"author": "Eli Menendez <elisamuelpantoja@gmail.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"@babel/core": "^7.8.4",
-		"@babel/preset-env": "^7.8.4",
-		"@babel/register": "^7.8.3",
+		"@babel/core": "^7.10.2",
+		"@babel/preset-env": "^7.10.2",
+		"@babel/register": "^7.10.1",
 		"babelify": "^10.0.0",
-		"browserify": "^16.5.0",
+		"browserify": "^16.5.1",
 		"gulp": "^4.0.2",
 		"gulp-babel": "^8.0.0",
 		"gulp-sourcemaps": "^2.6.5",
@@ -22,21 +22,21 @@
 		"vinyl-source-stream": "^2.0.0"
 	},
 	"dependencies": {
-		"@pixi/app": "^5.2.1",
-		"@pixi/constants": "^5.2.1",
-		"@pixi/core": "^5.2.1",
-		"@pixi/display": "^5.2.1",
-		"@pixi/loaders": "^5.2.1",
-		"@pixi/math": "^5.2.1",
-		"@pixi/particles": "^5.2.1",
-		"@pixi/polyfill": "^5.2.1",
-		"@pixi/runner": "^5.2.1",
-		"@pixi/settings": "^5.2.1",
-		"@pixi/sprite": "^5.2.1",
-		"@pixi/sprite-animated": "^5.2.1",
-		"@pixi/spritesheet": "^5.2.1",
-		"@pixi/ticker": "^5.2.1",
-		"@pixi/utils": "^5.2.1",
-		"pixi-filters": "^3.0.3"
+		"@pixi/app": "^5.2.4",
+		"@pixi/constants": "^5.2.4",
+		"@pixi/core": "^5.2.4",
+		"@pixi/display": "^5.2.4",
+		"@pixi/loaders": "^5.2.4",
+		"@pixi/math": "^5.2.4",
+		"@pixi/particles": "^5.2.4",
+		"@pixi/polyfill": "^5.2.4",
+		"@pixi/runner": "^5.2.4",
+		"@pixi/settings": "^5.2.4",
+		"@pixi/sprite": "^5.2.4",
+		"@pixi/sprite-animated": "^5.2.4",
+		"@pixi/spritesheet": "^5.2.4",
+		"@pixi/ticker": "^5.2.4",
+		"@pixi/utils": "^5.2.4",
+		"pixi-filters": "^3.1.1"
 	}
 }
