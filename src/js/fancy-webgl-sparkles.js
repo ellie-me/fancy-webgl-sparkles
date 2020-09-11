@@ -100,7 +100,7 @@ const FancyWebGLSparkles = (() =>
 				//If this property exists in the user settings, set the object property to that setting, otherwise use the defaults
 				if (property in inSettings) this.settings[property] = inSettings[property];
 
-				else if (attrSetting != "" && attrSetting != null)
+				else if (attrSetting !== "" && attrSetting != null)
 				{
 					try
 					{
@@ -197,7 +197,7 @@ const FancyWebGLSparkles = (() =>
 			this.width = this.settings.renderOutside? (this.element.getBoundingClientRect().width * 1.4) * this.settings.boundaryScale: this.element.getBoundingClientRect().width;
 			this.height = this.settings.renderOutside? (this.element.getBoundingClientRect().height * 1.4) * this.settings.boundaryScale : this.element.getBoundingClientRect().height;
 
-			if(this.pixi == undefined)
+			if(this.pixi === undefined)
 			{
 				this.pixi = new PIXI.Application({
 					width: this.width, height: this.height, transparent: true, autoDensity: true, clearBeforeRender: true
@@ -253,7 +253,7 @@ const FancyWebGLSparkles = (() =>
 		onTexturesLoaded(bTexturesAlreadyOnMemory)
 		{
 			//If we have lost the context because we have hit webgl limits then we need to create the context again
-			if (bTexturesAlreadyOnMemory && this.pixi.bInstanceHasBeenInitialized != undefined)
+			if (bTexturesAlreadyOnMemory && this.pixi.bInstanceHasBeenInitialized !== undefined)
 			{
 				this.pixi.start();
 				return;
@@ -404,7 +404,7 @@ const FancyWebGLSparkles = (() =>
 		//FadeOut the content when the mouse gets out of the view before destroying the instance
 		fadeOutCanvas()
 		{
-			if (this.pixi.stage.alpha == 0 && !this.pixi.bIsPendingDestroy) return;
+			if (this.pixi.stage.alpha === 0 && !this.pixi.bIsPendingDestroy) return;
 			if (this.pixi.stage.alpha >= 0 && this.pixi.bIsPendingDestroy)
 			{
 				this.pixi.stage.alpha = this.clamp(this.pixi.stage.alpha, 0, 1);
@@ -447,7 +447,7 @@ const FancyWebGLSparkles = (() =>
 			particle.alpha = this.clamp(particle.alpha, 0, maxOpacity);
 
 			//Check if the particle has faded out, change its position
-			if(!particle.fade && particle.alpha == 0)
+			if(!particle.fade && particle.alpha === 0)
 			{
 				particle.x = Math.random() * this.pixi.screen.width;
 				particle.y = Math.random() * this.pixi.screen.height;
