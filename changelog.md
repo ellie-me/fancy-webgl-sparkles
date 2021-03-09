@@ -28,7 +28,6 @@
 - Updated PixiJS to version 5.3.8
 - Removed the js folder and moved the library to source
 - Added an index.js with relevant exports for ES6 modules
-- 
 
 ### Documentation
 - Included a changelog with documented changes to the library
@@ -39,3 +38,7 @@
 - Updated the license from MIT to Apache-2.0 (it was originally Apache but put wrong in package.json)
 - Removed intellij Idea files from the repo
 
+## ✨🎇 Version 1.0.4  🎇✨
+### Library
+- Fixed an error that would not allow the package to be imported by Javascript
+- Added node scripts to the library for building and debugging

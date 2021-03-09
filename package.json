@@ -1,10 +1,13 @@
 {
 	"name": "fancy-webgl-sparkles",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "PIXI.js library to add glitter particles with bokeh and special effects to your DOM elements",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"publish": "npm publish",
+		"pack": "gulp pack",
+		"debug": "gulp debug",
+		"noPixi": "gulp noPixi"
 	},
 	"author": "Eli Menendez <elisamuelpantoja@gmail.com>",
 	"license": "Apache-2.0",
