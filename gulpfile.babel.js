@@ -12,7 +12,7 @@ import babel from "babelify";
 
 export const pack = () =>
 {
-	let bundler = browserify(["./src/js/fancy-webgl-sparkles.js"], { debug: false }).transform(babel);
+	let bundler = browserify(["./src/fancy-webgl-sparkles.js"], { debug: false }).transform(babel);
 
 	return bundler.bundle()
 		.on("error", (err)=>
@@ -27,7 +27,7 @@ export const pack = () =>
 
 export const noPixi = () =>
 {
-	return src("./src/js/fancy-webgl-sparkles-no-pixi.js")
+	return src("./src/fancy-webgl-sparkles-no-pixi.js")
 		.pipe(buffer())
 		.pipe(minjs())
 		.pipe(dest("./dist"));
@@ -35,7 +35,7 @@ export const noPixi = () =>
 
 export const debug = () =>
 {
-	let bundler = browserify(["./src/js/fancy-webgl-sparkles.js"], { debug: false }).transform(babel);
+	let bundler = browserify(["./src/fancy-webgl-sparkles.js"], { debug: false }).transform(babel);
 
 	return bundler.bundle()
 		.on("error", (err)=>
