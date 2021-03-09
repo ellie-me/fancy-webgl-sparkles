@@ -22,6 +22,9 @@ lib-cov
 coverage
 *.lcov
 
+# Intellij Idea Generated Files
+.idea
+
 # nyc test coverage
 .nyc_output
 
