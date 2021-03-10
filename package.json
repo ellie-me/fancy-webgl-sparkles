@@ -4,7 +4,6 @@
 	"description": "PIXI.js library to add glitter particles with bokeh and special effects to your DOM elements",
 	"main": "index.js",
 	"scripts": {
-		"publish": "git push && npm publish",
 		"version": "git add -A && git add CHANGELOG.md package.json && git add -A src docs",
 		"pack": "gulp pack && gulp noPixi",
 		"debug": "gulp debug"
