@@ -1,1 +1,1 @@
-export * from "./src/fancy-webgl-sparkles";
+module.exports = require("./src/fancy-webgl-sparkles");

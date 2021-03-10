@@ -42,3 +42,10 @@
 ### Library
 - Fixed an error that would not allow the package to be imported by Javascript
 - Added node scripts to the library for building and debugging
+
+## ✨🎇 Version 1.0.5  🎇✨
+### Library
+- Exposed the library as for ES6 module compatibility
+- Modified node scripts
+- Modified Package.json metadata
+- Removed strict javascript execution

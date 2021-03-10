@@ -16,7 +16,6 @@ export * from "@pixi/app";
 export * from "@pixi/sprite-animated";
 export * from "@pixi/spritesheet";
 
-
 // Renderer plugins
 import { Renderer } from "@pixi/core";
 import { BatchRenderer } from "@pixi/core";

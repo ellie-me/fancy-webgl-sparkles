@@ -1,15 +1,24 @@
 {
 	"name": "fancy-webgl-sparkles",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "PIXI.js library to add glitter particles with bokeh and special effects to your DOM elements",
 	"main": "index.js",
 	"scripts": {
-		"publish": "npm publish",
-		"pack": "gulp pack",
-		"debug": "gulp debug",
-		"noPixi": "gulp noPixi"
+		"publish": "git push && npm publish",
+		"version": "git add -A && git add CHANGELOG.md package.json && git add -A src docs",
+		"pack": "gulp pack && gulp noPixi",
+		"debug": "gulp debug"
 	},
+	"keywords": ["wegbl", "pixi", "pixijs", "awesome-webgl", "particles", "sparkles", "html5-canvas", "ui"],
 	"author": "Eli Menendez <elisamuelpantoja@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/elisamuelps/fancy-webgl-sparkles.git"
+	},
+	"bugs": {
+		"url": "https://github.com/elisamuelps/fancy-webgl-sparkles/issues"
+	},
+	"homepage": "https://fancy-webgl-sparkles.netlify.app/",
 	"license": "Apache-2.0",
 	"devDependencies": {
 		"@babel/core": "^7.13.10",

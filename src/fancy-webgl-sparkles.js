@@ -1,15 +1,13 @@
-/*! fancy-webgl-sparkles 1.0.3 | https:// | (c) 2020 Eli Menendez | Apache License */
-"use_strict";
+/*! fancy-webgl-sparkles 1.0.5 | (c) 2021 Eli Menendez | Apache License */
 import * as PIXI from "./pixi";
 
-// eslint-disable-next-line no-unused-vars
-export const FancyWebGLSparkles = (() =>
+const FancyWebGLSparkles = (() =>
 {
 	class FancyWebGLSparkles
 	{
 		constructor(element, inSettings = {})
 		{
-			if (!(element instanceof Node)) throw "Can't initialize FancyWebGLSparkles because " + element + " is not a Node.";
+			if (!(element instanceof Node)) throw `Can't initialize FancyWebGLSparkles because ${element} is not a Node.`;
 			this.settings = inSettings;
 			this.element = element;
 			this.mouseEventElement = null;

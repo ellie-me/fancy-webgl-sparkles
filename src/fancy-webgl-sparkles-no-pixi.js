@@ -1,7 +1,5 @@
-/*! fancy-webgl-sparkles 1.0.3 | https:// | (c) 2020 Eli Menendez | Apache License */
-"use_strict";
-// eslint-disable-next-line no-unused-vars
-export const FancyWebGLSparkles = (() =>
+/*! fancy-webgl-sparkles 1.0.5 | (c) 2021 Eli Menendez | Apache License */
+const FancyWebGLSparkles = (() =>
 {
 	class FancyWebGLSparkles
 	{
@@ -401,7 +399,7 @@ export const FancyWebGLSparkles = (() =>
 		//FadeOut the content when the mouse gets out of the view before destroying the instance
 		fadeOutCanvas()
 		{
-			if (this.pixi.stage.alpha == 0 && !this.pixi.bIsPendingDestroy) return;
+			if (this.pixi.stage.alpha === 0 && !this.pixi.bIsPendingDestroy) return;
 			if (this.pixi.stage.alpha >= 0 && this.pixi.bIsPendingDestroy)
 			{
 				this.pixi.stage.alpha = this.clamp(this.pixi.stage.alpha, 0, 1);
